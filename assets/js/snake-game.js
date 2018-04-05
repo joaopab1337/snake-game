@@ -95,7 +95,7 @@ class Game{
       this.context.fillRect(this.snake.trail[i].x * this.squareSize, this.snake.trail[i].y * this.squareSize, this.squareSize, this.squareSize);
       if(this.snake.trail[i].x == this.snake.sx && this.snake.trail[i].y == this.snake.sy) { // Game over condition
         this.gameOver = true;
-        document.getElementById("timer").innerText = 0;
+	this.turtleTimer = 0;
         this.gameOverScreen = `<div class="gameover" id="gameover">
                                   <p>Your score:</p>
                                   <h4>${this.score}</h4>
@@ -105,6 +105,7 @@ class Game{
         document.getElementById("menu").insertAdjacentHTML("beforeend", this.gameOverScreen);
         document.getElementById("playAgain-button").firstChild.addEventListener("click", function(){
           document.getElementById("gameover").outerHTML = "";
+          document.getElementById("timer").innerText = 0;
           startGame();
         });
       }
