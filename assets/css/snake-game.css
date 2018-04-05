@@ -1,0 +1,155 @@
+html, body, div, span, object, iframe,
+h1,  h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+ strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+  font-family: "Press Start 2P";
+}
+
+.wrapper{
+  width: 60%;
+  margin: 0 auto;
+}
+
+canvas {
+  border-bottom: 5px solid #060a09;
+  border-left: 5px solid #060a09;
+  border-right: 5px solid #060a09;
+  background-color: #9ac504;
+  margin: 0 auto;
+}
+
+#game-info {
+  width: 625px;
+  border: 5px solid #060a09;
+  background-color: #9ac504;
+}
+
+h2 {
+  margin: 5px;
+  width: 50%;
+}
+
+#score, #timer, img  {
+  display: inline-block;
+}
+
+ img {
+  margin-left: 150px;
+}
+
+.menu {
+  display: inline-block;
+  position: relative;
+}
+
+
+#start-button{
+  z-index: 50;
+  font-family: "Press Start 2P";
+  font-size: 1.6em;
+  border: 5px solid #060a09;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: #9ac504;
+  padding: 5px;
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transition: .5s linear;
+}
+
+#start-button:hover{
+  background-color: #b9ec07;
+}
+
+#gameover {
+  border: 5px solid #060a09;
+  background-color: #9ac504;
+  padding: 10px;
+  z-index: 90;
+  text-align: center;
+  position: absolute;
+  top: 225px;
+  left: 225px;
+}
+
+.gameover {
+}
+
+#gameover p, h4 {
+  padding: 5px;
+}
+
+#playAgain-button{
+  font-family: "Press Start 2P";
+  font-size: 1.6em;
+  border: none;
+  text-decoration: none;
+  background-color: #9ac504;
+  padding: 5px;
+  cursor: default;
+  width: 100%;
+}
+
+#playAgain-button i{
+  padding: 5px;
+  font-size: 50px;
+  border: 2px solid #060a09;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.controls {
+  width: 625px;
+  border: 5px solid #060a09;
+  background-color: #9ac504;
+  text-align: center;
+}
+
+.controls i {
+  font-size: 3em;
+  cursor: pointer;
+}
+
+#k-up {
+  width: 625px;
+  margin-bottom: 25px;
+}
+
+#k-left {
+  margin-right: 50px;
+}
+
+#k-right {
+  margin-left: 50px;
+}
+
+#k-down {
+  margin-top: 25px;
+  width: 625px;
+}
+
+#share-button {
+  font-family: "Press Start 2P";
+  border: 2px solid #060a09;
+  text-decoration: none;
+  background-color: #9ac504;
+  padding: 5px;
+  cursor: pointer;
+}

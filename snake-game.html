@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Snake Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/snake-game.css">
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <div id="game-info" class="game-info">
+        <h2 id="score">0</h2>
+        <img src="assets/img/turtle.png" alt="Turtle Image">
+        <p id="timer">0</p>
+      </div>
+
+      <div class="menu" id="menu">
+        <canvas id="snake-game" width="625" height="625"></canvas>
+        <button type="button" name="start-button" id="start-button">Start</button>
+      </div>
+
+      <div class="controls">
+        <i class="material-icons" id="k-up">keyboard_arrow_up</i>
+        <i class="material-icons" id="k-left">keyboard_arrow_left</i>
+        <i class="material-icons" id="k-right">keyboard_arrow_right</i>
+        <i class="material-icons" id="k-down">keyboard_arrow_down</i>
+      </div>
+      
+    </div>
+
+    <script src="https://telegram.org/js/games.js"></script>
+    <script src="assets/js/snake-game.js"></script>
+  </body>
+</html>
